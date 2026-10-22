@@ -1,7 +1,11 @@
 import numpy as np
 from sklearn.linear_model import LinearRegression, TheilSenRegressor, RANSACRegressor
-from ._version import __version_tuple__, __version__
+
 import yaml
+
+# __version__ определяется в regression_bias_corrector/__init__.py
+from . import __version__, __version_tuple__
+
 
 
 class LinearBiasCorrector:
